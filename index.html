@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Running of the Bulls</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>¡Socorro!</h1>
+    </header>
+    <container>
+
+<!-- Left side of screen, directions and pictures of man running. If you have time, create css -->
+<!-- graphics of bull and man, and make the bull get larger every time the user answers a question -->
+<!-- incorrectly.  -->
+        <div class="left">
+            <h3>Directions: Answer the questions to escape the raging bull!
+                Answer inccorectly, and the bull will gain on you!
+            </h3>
+            <img src="RunninMan.png" alt="Man with blonde handle-bare mustache runs
+             from charging bulls on the cobblestone streets of Pamplona, Spain.">
+        </div>
+
+<!-- Right side of screen is where the magic happens. Trivia cards will automatically change -->
+<!-- after the user gets them right. If they get a questions wrong, it doesn't give them  -->
+<!-- another chance, because that seems really difficult to code right now. Going for mvp here. -->
+<!-- Maybe a silver or gold feature would be to give the user 3 tries on each question.  My 
+skills don't allow for mercy right now, though...-->
+        <div class="right">
+            <div class="questions">
+                <ul>
+                    <!-- Use JS to create a class to fill these with instances? Would that
+                    be better than writing out every question in html?-->
+                    <li id="answer_A"></li>
+                    <li id="answer_B"></li>
+                    <li id="answer_C"></li>
+                    <li id="answer_D"></li>
+                </ul>
+            </div>
+
+        </div>
+    </container>
+    <footer>
+        <!-- Completeness marker line goes here. Runner moves and bull moves. -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
