@@ -1,0 +1,152 @@
+body {
+    margin: 0px;
+    background-color: whitesmoke;
+    min-width: 1200px;
+    
+    
+}
+
+header {
+    background-color: yellow;
+    color: red;
+    font-family: sans-serif;
+    border-top: 30px solid red;
+    border-bottom: 30px solid red;
+    padding: 0px;
+    padding-left: 30px;
+    font-size: 30px;
+    font-family: 'Londrina Solid', cursive;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    background-color: whitesmoke;
+    padding: 15px;
+    margin-top: 0px;
+}
+
+.container {
+    margin-left: 10px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-around;
+    min-height: 450px;
+}
+
+.left {
+    width: 50%;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.right {
+    width: 50%;
+}
+
+.questions {
+    width: 80%;
+    height: 93%;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-top: 20px;
+    /* I borrowed box shadow from the internet. */
+    -webkit-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
+    /* end borrowing */
+    border-radius: 4%;
+}
+
+.questionsContainer {
+    background-color: white;
+    height: 40%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+    /* I borrowed box shadow from the internet. */
+    -webkit-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
+    /* end borrowing */
+    border-radius: 4%;
+
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 0px;
+    margin-right: 39px;
+    align-content: space-around;
+
+}
+
+li {
+    list-style-type: none;
+    width: 160px;
+    height: 60px;
+    background-color: yellow;
+    margin-bottom: 20px;
+    /* I borrowed box shadow from the internet. */
+    -webkit-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
+    /* end borrowing */
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 5%;
+    
+}
+
+li:hover {
+    background-color: red;
+    color: white;
+}
+
+li:active {
+    background-color: red;
+}
+
+footer p {
+    padding-left: 35%;
+    padding-right: 35%;
+    background-color: yellow;
+    margin-bottom: 0px;
+    height: 30px;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+}
+
+.bull {
+    position: absolute;
+    width: 100px;
+    margin-left: 500px;
+    margin-top: 10px;
+   
+}
+
+.girl {
+    position: absolute;
+    width: 50px;
+    margin-left: 500px;
+    margin-top: 60px;
+    
+    
+}
+
+
+
+
