@@ -7,28 +7,66 @@ body {
 }
 
 header {
-    background-color: yellow;
-    color: red;
+    background-color: red;
     font-family: sans-serif;
-    border-top: 30px solid red;
-    border-bottom: 30px solid red;
-    padding: 0px;
-    padding-left: 30px;
+    padding-left: 50px;
     font-size: 30px;
     font-family: 'Londrina Solid', cursive;
+    box-sizing: border-box;
+    max-height: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
-h1 {
+.cow-head {
+    position: absolute;
+    width: 200px;
+    margin-top: 120px;
+    margin-left: 10px;
+}
+
+h1, h2 {
+    color: yellow;
     margin: 0px;
     padding: 0px;
+    font-size: 30px;
+    /* borrowed text shadow from internet */
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+   
+}
+
+h2 {
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 50px;
 }
 
 h3 {
     font-family: 'Raleway', sans-serif;
-    background-color: whitesmoke;
-    padding: 15px;
+    background-color: white;
+    padding: 20px 25px 20px 25px;
     margin-top: 0px;
+    max-width: 300px;
+    margin-left: 200px;
+    border-radius: 50% 50% 50% 0%/80%;
+    font-size: 100%;
+    text-align: center;
+    line-height: 25px;
+    border: 2px solid #d6f5d6;
+    margin-top: 10px;
+
 }
+
+a {
+    text-decoration: none;
+}
+
+
 
 .container {
     margin-left: 10px;
@@ -49,18 +87,18 @@ h3 {
 }
 
 .questions {
-    width: 80%;
+    width: 60%;
     height: 93%;
     background-color: white;
-    margin-left: 20px;
+    margin-left: 70px;
     margin-top: 20px;
     padding-top: 20px;
     /* I borrowed box shadow from the internet. */
-    -webkit-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
+    /* -webkit-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75); */
     /* end borrowing */
-    border-radius: 4%;
+    /* border-radius: 4%; */
 }
 
 .questionsContainer {
@@ -69,12 +107,13 @@ h3 {
     width: 80%;
     margin: 0 auto;
     margin-top: 15px;
+    border: 2px solid #d6f5d6;
     /* I borrowed box shadow from the internet. */
-    -webkit-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
+    /* -webkit-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75); */
     /* end borrowing */
-    border-radius: 4%;
+    /* border-radius: 4%; */
 
 }
 
@@ -90,25 +129,25 @@ ul {
 
 li {
     list-style-type: none;
-    width: 160px;
-    height: 60px;
-    background-color: yellow;
+    width: 130px;
+    height: 50px;
+    background-color: white;
     margin-bottom: 20px;
     /* I borrowed box shadow from the internet. */
-    -webkit-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
+    /* -webkit-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75); */
     /* end borrowing */
     font-family: 'Raleway', sans-serif;
     font-size: 25px;
     text-align: center;
-    padding-top: 20px;
-    border-radius: 5%;
+    border-radius: 3%;
+    border: 2px solid #d6f5d6;
     
 }
 
 li:hover {
-    background-color: red;
+    background-color: whitesmoke;
     color: white;
 }
 

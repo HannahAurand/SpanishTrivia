@@ -28,6 +28,8 @@ var ansB = document.querySelector('#answer_B')
 var ansC = document.querySelector('#answer_C')
 var ansD = document.querySelector('#answer_D')
 
+
+
 //setting vars for the positions of the girl and the bull
 var girlVert = girl.style.margin-top=//set this by calling a function
 // that changes depending on the right answer or wrong answer
