@@ -152,8 +152,16 @@ li:hover {
     color: white;
 }
 
-li:active {
-    background-color: red;
+button {
+    position: relative;
+    background-color: #d6f5d6;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 5px 10px 5px;
+    border: none;
+    font-size: 20px;
+    margin-left: 30%;
+   
 }
 
 footer p {
