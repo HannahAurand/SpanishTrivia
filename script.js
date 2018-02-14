@@ -20,8 +20,8 @@ var questions = [
         "Hola"
     ),
     new Question (
-        "How are you?",
-        "¿Cómo estás?",
+        "How",
+        "¿Cómo?",
         "¿Hola?",
         "Gato",
         "Perro",
@@ -141,27 +141,6 @@ ansD.addEventListener('click', function() {
     console.dir(userChoice)
 })
 
-//var Choice = Choice()
-
-//Function to display the questions and answers in the display
- /*
-    1. take the current value of the index and display the question
-    at that index in the questions Array.
-    2. listen for click event on the question answers lis
-    3. when clicked, compare clicked answer to correct answer
-    4. A. If correct: let the user know they got the right answer
-    4. B. If incorrect: let the user know they got the wrong answer
-    5. set a timeout (i.e. delay) for ~500ms then switch to next question:
-        - check if a next question
-        - if a next question:
-            - increment index number
-            - display the question at the new index
-        - else, display their score or something
-    */
-
-    // questions.forEach(function () {
-
-    // })
 
 function Display() {
     ansA.style.backgroundColor = "white"
@@ -178,7 +157,8 @@ function Display() {
         ansB.addEventListener('click', compare)
         ansC.addEventListener('click', compare)
         ansD.addEventListener('click', compare)
-    // questions.forEach(function (q, i) {
+   
+        // questions.forEach(function (q, i) {
         // console.log(q)
 //         question.innerText = q.question
 //         ansA.innerText = q.ansA
@@ -215,3 +195,24 @@ function compare() {
 
 // button.addEventListener('click', girl.style.width="")
 
+//var Choice = Choice()
+
+//Function to display the questions and answers in the display
+ /*
+    1. take the current value of the index and display the question
+    at that index in the questions Array.
+    2. listen for click event on the question answers lis
+    3. when clicked, compare clicked answer to correct answer
+    4. A. If correct: let the user know they got the right answer
+    4. B. If incorrect: let the user know they got the wrong answer
+    5. set a timeout (i.e. delay) for ~500ms then switch to next question:
+        - check if a next question
+        - if a next question:
+            - increment index number
+            - display the question at the new index
+        - else, display their score or something
+    */
+
+    // questions.forEach(function () {
+
+    // })
