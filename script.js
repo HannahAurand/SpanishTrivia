@@ -103,7 +103,8 @@ var ansC = document.querySelector('#answer_C')
 var ansD = document.querySelector('#answer_D')
 var li = document.getElementsByTagName('li')
 var questionCounter = 0
-
+var button = document.querySelector('.nextQuestion')
+console.dir(button)
 
 console.log(li)
 //Storing the user's answer choice in a var using an if statement
@@ -162,7 +163,7 @@ ansD.addEventListener('click', function() {
 
     // })
 
-function Display () {
+function Display() {
     ansA.style.backgroundColor = "white"
     ansB.style.backgroundColor = "white"
     ansC.style.backgroundColor = "white"
@@ -200,20 +201,17 @@ Display()
 //to the score array
 function compare() {
     if (userChoice.innerHTML === questions[questionCounter].correctAnswer) {
-        userChoice.style.backgroundColor = "green"
+        userChoice.style.backgroundColor = "#d6f5d6"
         // score += 1
         questionCounter++
-        
+        button.addEventListener('click', Display)
     } else {
         console.log(userChoice.innerHTML)
         console.log(questions[questionCounter].correctAnswer)
-        userChoice.style.backgroundColor = "red" 
+        userChoice.style.backgroundColor = "#ff8b8e" 
     }
     //change display so that the next question gets displayed after a delayed timeOut
 }
 
-//create a function that adds all the array numbers together to give the user
-//her or his total points
-
-
+// button.addEventListener('click', girl.style.width="")
 
