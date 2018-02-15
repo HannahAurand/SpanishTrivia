@@ -132,6 +132,7 @@ ansD.addEventListener('click', function() {
 
 //Resetting the question and answers display after each question
 function Display() {
+    document.body.querySelector('ul').classList.remove('has-selected-wrong-answer')
     ansA.style.backgroundColor = "white"
     ansB.style.backgroundColor = "white"
     ansC.style.backgroundColor = "white"
@@ -151,9 +152,12 @@ function Display() {
 
 Display()
 
+
 //compare the userChoice to the correctAnswer and add the correct number of points 
 //to the score array
 function compare() {
+    // questionCounter++
+    // button.addEventListener('click', Display)
     if (userChoice.innerHTML === questions[questionCounter].correctAnswer) {
         userChoice.style.backgroundColor = "#d6f5d6"
         score += 1
@@ -164,6 +168,9 @@ function compare() {
         console.log(userChoice.innerHTML)
         console.log(questions[questionCounter].correctAnswer)
         userChoice.style.backgroundColor = "#ff8b8e" 
+        document.body.querySelector('ul').classList.add('has-selected-wrong-answer')
+        questionCounter++
+        button.addEventListener('click', Display)
         endOfQuestions()
     }
     
@@ -177,9 +184,19 @@ function endOfQuestions() {
 }
 
 function makeGirlBigger() {
-
+    width = girl.style.width 
+    width = width + 20
 }
 
 function makeBullBigger() {
-    
+    width = bull.style.width
+    width = width + 20
 }
+
+/*
+- when the use clicks the wrong answer, add a class to the parent container like `.has-selected-wrong-answer`
+- that class has a `pointer-events: none` property
+- next question button click: switch to next question and remove class
+
+*/
+

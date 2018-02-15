@@ -206,6 +206,6 @@ footer p {
     margin-right: 120px;
 }
 
-
-
-
+.has-selected-wrong-answer {
+    pointer-events: none;
+}
