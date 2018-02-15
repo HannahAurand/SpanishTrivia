@@ -105,10 +105,7 @@ var ansD = document.querySelector('#answer_D')
 var li = document.getElementsByTagName('li')
 var questionCounter = 0
 var button = document.querySelector('.nextQuestion')
-
 var score = 0
-
-console.log(score)
 
 //Storing the user's answer choice in a var using an if statement
 
@@ -131,6 +128,7 @@ ansD.addEventListener('click', function() {
     userChoice = ansD
     console.dir(userChoice)
 })
+
 
 //Resetting the question and answers display after each question
 function Display() {
@@ -161,36 +159,27 @@ function compare() {
         score += 1
         questionCounter++
         button.addEventListener('click', Display)
+        endOfQuestions()
     } else {
         console.log(userChoice.innerHTML)
         console.log(questions[questionCounter].correctAnswer)
         userChoice.style.backgroundColor = "#ff8b8e" 
+        endOfQuestions()
     }
     
 }
+function endOfQuestions() {
+    if (questionCounter === questions.length) {
+        button.addEventListener('click', function() {
+            question.innerText = "You earned " + score + " points!"
+        })
+    }
+}
 
+function makeGirlBigger() {
 
+}
 
-// button.addEventListener('click', girl.style.width="")
-
-//var Choice = Choice()
-
-//Function to display the questions and answers in the display
- /*
-    1. take the current value of the index and display the question
-    at that index in the questions Array.
-    2. listen for click event on the question answers lis
-    3. when clicked, compare clicked answer to correct answer
-    4. A. If correct: let the user know they got the right answer
-    4. B. If incorrect: let the user know they got the wrong answer
-    5. set a timeout (i.e. delay) for ~500ms then switch to next question:
-        - check if a next question
-        - if a next question:
-            - increment index number
-            - display the question at the new index
-        - else, display their score or something
-    */
-
-    // questions.forEach(function () {
-
-    // })
+function makeBullBigger() {
+    
+}
