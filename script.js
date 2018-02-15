@@ -1,4 +1,4 @@
-//creating a template for the questions and answers class
+//Template for the questions and answers class
 class Question {
     constructor (question, ansA, ansB, ansC, ansD, correctAnswer) {
         this.question = question
@@ -10,6 +10,7 @@ class Question {
     }
 }
 
+//Array of instances of Questions 
 var questions = [
     new Question(
         "Hello",
@@ -25,7 +26,7 @@ var questions = [
         "¿Hola?",
         "Gato",
         "Perro",
-        "¿Cómo estás?"
+        "¿Cómo?"
     ),
     new Question (
         "Name",
@@ -93,7 +94,7 @@ var questions = [
     ),
 ]
 
-
+//Setting variable values
 var girl = document.querySelector(".girl")
 var bull = document.querySelector(".bull")
 var question = document.querySelector('.questionsContainer')
@@ -104,22 +105,12 @@ var ansD = document.querySelector('#answer_D')
 var li = document.getElementsByTagName('li')
 var questionCounter = 0
 var button = document.querySelector('.nextQuestion')
-console.dir(button)
 
-console.log(li)
+var score = 0
+
+console.log(score)
+
 //Storing the user's answer choice in a var using an if statement
-
-// function Choice() {
-//     if (ansA.addEventListener('click')=true) {
-//         Choice = ansA
-//     } else if (ansB.addEventListener('click')=true) {
-//         Choice = ansB
-//     } else if (ansC.addEventListener('click'=true) {
-//         Choice = ansC
-//     } else if (ansD.addEventListener('click'=true) {
-//         Choice = ansD
-//     }   
-// }
 
 ansA.addEventListener('click', function() {
     userChoice = ansA
@@ -141,7 +132,7 @@ ansD.addEventListener('click', function() {
     console.dir(userChoice)
 })
 
-
+//Resetting the question and answers display after each question
 function Display() {
     ansA.style.backgroundColor = "white"
     ansB.style.backgroundColor = "white"
@@ -158,21 +149,6 @@ function Display() {
         ansC.addEventListener('click', compare)
         ansD.addEventListener('click', compare)
    
-        // questions.forEach(function (q, i) {
-        // console.log(q)
-//         question.innerText = q.question
-//         ansA.innerText = q.ansA
-//         ansB.innerText = q.ansB
-//         ansC.innerText = q.ansC
-//         ansD.innerText = q.ansD
-//         ansA.addEventListener('click', compare)
-//         ansB.addEventListener('click', compare)
-//         ansC.addEventListener('click', compare)
-//         ansD.addEventListener('click', compare)
-//         if (i === questions.length) {
-//             question.innerText = "Your score is " + finalScore + " out of 10."
-//         }
-//     })
 } 
 
 Display()
@@ -182,7 +158,7 @@ Display()
 function compare() {
     if (userChoice.innerHTML === questions[questionCounter].correctAnswer) {
         userChoice.style.backgroundColor = "#d6f5d6"
-        // score += 1
+        score += 1
         questionCounter++
         button.addEventListener('click', Display)
     } else {
@@ -190,8 +166,10 @@ function compare() {
         console.log(questions[questionCounter].correctAnswer)
         userChoice.style.backgroundColor = "#ff8b8e" 
     }
-    //change display so that the next question gets displayed after a delayed timeOut
+    
 }
+
+
 
 // button.addEventListener('click', girl.style.width="")
 
