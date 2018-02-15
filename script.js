@@ -106,6 +106,8 @@ var li = document.getElementsByTagName('li')
 var questionCounter = 0
 var button = document.querySelector('.nextQuestion')
 var score = 0
+var currentWidth = 100
+
 
 //Storing the user's answer choice in a var using an if statement
 
@@ -159,29 +161,50 @@ function compare() {
     // questionCounter++
     // button.addEventListener('click', Display)
     if (userChoice.innerHTML === questions[questionCounter].correctAnswer) {
+        console.log(userChoice.innerHTML)
+        console.log(questions[questionCounter].correctAnswer)
+        console.log(questionCounter)
         userChoice.style.backgroundColor = "#d6f5d6"
         score += 1
         questionCounter++
+        console.log(questionCounter)
+        girl.style.width = currentWidth + 'px'
+        currentWidth += 10
         button.addEventListener('click', Display)
         endOfQuestions()
+        
     } else {
+        console.log(questionCounter)
         console.log(userChoice.innerHTML)
         console.log(questions[questionCounter].correctAnswer)
         userChoice.style.backgroundColor = "#ff8b8e" 
         document.body.querySelector('ul').classList.add('has-selected-wrong-answer')
         questionCounter++
+        console.log(questionCounter)
+        bull.style.width = currentWidth + 'px'
+        currentWidth += 10
         button.addEventListener('click', Display)
         endOfQuestions()
     }
     
 }
 function endOfQuestions() {
+   
     if (questionCounter === questions.length) {
+        question.innerText = "You earned " + score + " points!"
         button.addEventListener('click', function() {
-            question.innerText = "You earned " + score + " points!"
         })
+        questionCounter = 0
+        score = 0
+        button.innerHTML = "Restart"
+        button.addEventListener('click', function () {
+            window.location.reload()
+        })
+
     }
 }
+
+
 
 function makeGirlBigger() {
     width = girl.style.width 
