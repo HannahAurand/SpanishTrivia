@@ -21,4 +21,3 @@ Can you randomize the answers without creating an array for all the answers and 
 whole code? Would using the array reduce the amount of variables you would have to save as your
 answers from the html
 5. Change var to let and const
-6. Change font links to https so they show up on github pages
