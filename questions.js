@@ -1,4 +1,4 @@
-//creating a template for the questions and answers class
+//Template for the questions and answers class
 class Question {
     constructor (question, ansA, ansB, ansC, ansD, correctAnswer) {
         this.question = question
@@ -9,7 +9,7 @@ class Question {
         this.correctAnswer = correctAnswer
     }
 }
-
+//Array of instances of Questions 
 var questions = [
     new Question(
         "Hello",
@@ -20,12 +20,12 @@ var questions = [
         "Hola"
     ),
     new Question (
-        "How are you?",
-        "¿Cómo estás?",
+        "How",
+        "¿Cómo?",
         "¿Hola?",
         "Gato",
         "Perro",
-        "¿Cómo estás?"
+        "¿Cómo?"
     ),
     new Question (
         "Name",
